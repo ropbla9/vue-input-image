@@ -1,5 +1,7 @@
 # vue-input-image
 
+Just call this component, pick a image, then a @submit event will dispatch returning a BASE64 String.
+
 Mandatory peer dependencies:
 
 - Vue 2.0
