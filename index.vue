@@ -17,7 +17,7 @@
                     @change="input($event)"
                     :accept="accept"
                     :requried="required">
-            <span :class="'button ' + size">
+            <span :class="'button ' + size + ' ' + colorType">
                 <b-icon icon="upload" :size="size"/>
                 <span>{{cta}}</span>
             </span>
@@ -51,6 +51,10 @@
             cta: {
                 type: String,
                 default: 'Click to pick an image'
+            },
+            colorType: {
+                type: String,
+                default: 'is-primary'
             }
         },
 
